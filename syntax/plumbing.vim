@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:     Plumbing (for Plan 9's plumbing)
 " Maintainer:   Gnosis Ouroubouros <vim.20.noos@spamgourmet.com>
-" Version Info: 1.0
+" Version Info: 1.1
 " Last Change:  2009-06-04
 
 " For version 5.x: Clear all syntax items
@@ -35,7 +35,7 @@ syn match plumbingPort      /\<[^ ]\+\>/  contained
 syn match plumbingRegex     /\<.*$/       contained
 syn match plumbingShell     /\<.*$/       contained
 syn match plumbingSet       /\<set\>/               nextgroup=plumbingSetArg     skipwhite
-syn match plumbingSetArg    /\<.*$/       contained
+syn match plumbingSetArg    /\<.*/        contained contains=plumbingVariable    skipwhite
 syn match plumbingStart     /\<start\>/             nextgroup=plumbingShell      skipwhite
 syn match plumbingTo        /\<to\>/                nextgroup=plumbingPort       skipwhite
 syn match plumbingType      /^type\>/               nextgroup=@plumbingNormVerb  skipwhite
