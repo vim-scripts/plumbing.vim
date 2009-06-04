@@ -1,0 +1,7 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2661
+
+This script will color highlight Plan 9's plumber configuration files (plumbing).
+
+All of the different elements of a plumbing file can be colored separately, per your own preference.  Here is an example:
+
+http://img194.imageshack.us/img194/4161/plumbingvimsyntax.png
